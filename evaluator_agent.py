@@ -38,11 +38,18 @@ global_score_schema = ResponseSchema(
                 "Skills (40%), Experience (30%), Education (20%), Soft Skills (10%)."
 )
 
+title_schema = ResponseSchema(
+    name="title",
+    description="The job title and company name. Format: 'job_title at company'."
+)
+
+
 response_schemas = [skills_schema, 
                     experience_schema,
                     education_schema,
                     soft_skills_schema,
-                    global_score_schema
+                    global_score_schema,
+                    title_schema,
                     ]
 
 output_parser = StructuredOutputParser.from_response_schemas(response_schemas)
