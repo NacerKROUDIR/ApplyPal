@@ -23,7 +23,7 @@ ApplyPal is a powerful tool that leverages language models to evaluate your resu
     ```
 
 ## Usage
-To use the AI_Web_Scraper, follow these steps:
+To use ApplyPal, follow these steps:
 
 ## How to Run
 1. Set the `OPENAI_API_KEY` as an environment variable:
