@@ -11,11 +11,11 @@ ApplyPal is a powerful tool that leverages language models to evaluate your resu
 ## Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/NacerKROUDIR/AI_Web_Scraper.git
+    git clone https://github.com/NacerKROUDIR/ApplyPal.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd AI_Web_Scraper
+    cd ApplyPal
     ```
 3. Install the required dependencies:
     ```sh
