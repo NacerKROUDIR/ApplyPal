@@ -185,9 +185,14 @@ with right_section:
     tab1, tab2 = st.tabs(["⭐ Evaluation", "💬 Free Chat"])
     with tab1:
         if st.button("Evaluate", type='primary', use_container_width=True, icon='🧐'):
-            progress_bar = st.progress(45, "Evaluating...")
-            st.session_state.evaluation = evaluate_resume(st.session_state.resume_content, st.session_state.job_text)
-            progress_bar.empty()
+            if "resume_content" not in st.session_state:
+                st.warning('Please upload a resume first', icon="⚠️")
+            elif st.session_state.job_text == "":
+                st.warning('Please provide a job description', icon="⚠️")
+            else:
+                progress_bar = st.progress(45, "Evaluating...")
+                st.session_state.evaluation = evaluate_resume(st.session_state.resume_content, st.session_state.job_text)
+                progress_bar.empty()
         
         evaluation_container = st.container(height=600)
 
