@@ -1,4 +1,4 @@
-# AI_Web_Scraper
+# ApplyPal 🧠
 
 ## Description
 ApplyPal is a powerful tool that leverages language models to evaluate your resume for a specific job description, ApplyPal also answers all your questions within the same context. It is designed to be easy to use and highly customizable.
